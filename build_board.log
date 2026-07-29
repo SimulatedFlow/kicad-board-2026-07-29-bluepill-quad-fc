@@ -1,0 +1,13 @@
+Routing confirmed complete — all signal nets traced on F.Cu/B.Cu between the sockets, ESC/RX headers, IMU and passives; GND/+5V carried by the inner planes. The board is saved (refill → save → DRC verified).
+
+## Zusammenfassung
+
+**Gebaut:** Bluepill-QuadFC-Carrier, 80×80 mm, 4-lagig, reine THT-Bestückung. Ordner `_BoardIdeas\2026-07-29-bluepill-quad-fc`.
+
+- **Schaltplan:** 17 Bauteile, 61 Pins, 18 Netze — 2× Bluepill-Sockel (1x20, 22,86 mm Reihenabstand), IMU-Sockel 1x08, 4× ESC-Header 1x03, RC-Header 1x06, Phoenix-Klemme 2-pol., Verpolschutz-Diode 1N5819, Elko 470 µF, 100 nF, Buzzer-Header, LED + 330 Ω, 2× 4,7 kΩ I2C-Pullups.
+- **PCB:** Umriss 80×80, 4× M3-Bohrung (Ø3,2) in den Ecken. Stackup F.Cu/In1.Cu(GND-Plane)/In2.Cu(+5V-Plane)/B.Cu; Innenlagen als `power` geflippt, F.SilkS-Namenskorruption behoben (bekannte add_layer-Bugs). GND- + +5V-Vollflächen-Zonen (Inset 0,6) gefüllt.
+- **Platzierung:** ALLE 17 Bauteile überlappungsfrei innerhalb des Umrisses platziert (Sichtkontrolle per Render bestätigt) — Bluepill zentral, IMU zentral-unten, ESC-Header in den 4 Ecken (Motorpositionen), PWR links / RX rechts. **Abweichung:** statt `suggest_placement` per Koordinaten platziert — in diesem Repo stapelt suggest_placement die zwei 1x20-Sockel und verschiebt die Bohrungen zuverlässig; deshalb deterministisch gesetzt.
+- **Step-1c (SMD-Vias):** entfällt — reines THT-Board, alle GND/+5V-Pins kontaktieren die Planes durch ihre Bohrungen (per DRC bestätigt: 0 unconnected Power-Pads).
+- **Routing:** `autoroute` (Freerouting, 8,3 s), 95 Tracks, 6 Vias. Alle 16 Signalnetze geroutet (je per query_traces geprüft), 0 Segmente auf den Innen-Planes. Das eine „unrouted" der Freerouting-Logs ist ein Plane-Netz (korrekt).
+- **DRC:** **0 Fehler**, 10 kosmetische Warnungen (4× MountingHole-Lib-Nag, 2× silk_overlap, 4× silk_over_copper). Board gespeichert.
+- **Offene Punkte:** Gerber/BOM/PDF nicht selbst exportiert (läuft automatisch nach). Hinweis fürs reale Board: IMU sitzt zentral-unten neben dem Bluepill (nicht exakt Boardmitte), da das Bluepill-Modul die geometrische Mitte belegt.

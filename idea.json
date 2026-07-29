@@ -1,0 +1,9 @@
+{
+  "board_name": "Bluepill-QuadFC-Carrier",
+  "one_liner": "STM32-Bluepill Quadcopter-Flugcontroller-Traegerboard: IMU-Modulsockel (MPU-6050), 4x ESC-PWM-Ausgaenge, RC-Empfaenger-Header, Buzzer & Status-LED - alles handloetbar.",
+  "market_gap": "Guenstiges, komplett THT-handloetbares Flight-Controller-Traegerboard fuer Bastler/Bildung: Bluepill + GY-521-Modul aufstecken, 4 ESCs anstecken, fertig - ohne Kabelsalat, mit Beispiel-Firmware.",
+  "confidence": "high",
+  "price_eur": 17,
+  "target_enclosure": "80x80mm Quadcopter-Center-Plate",
+  "injection_notes": "keine"
+}
