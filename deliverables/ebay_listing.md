@@ -44,10 +44,10 @@ Fertigung auf Bestellung - Lieferzeit nach PCBWay-Produktion. Versand als versic
 ## Anbieter / Impressum (gewerblicher Verkauf)
 Simulated Flow UG (haftungsbeschränkt)
 Zeller Straße 37 A, 77833 Ottersweier, Deutschland
-Vertreten durch den Geschäftsführer: Silvan Teufel
+Vertreten durch den Geschäftsführer: Simulated Flow
 Registergericht: Amtsgericht Mannheim, HRB 758925
 USt-IdNr.: DE463825106
-E-Mail: info@teufel-engineering.com
+E-Mail: simulatedflow@gmail.com
 Web: https://simulatedflow.teufel-engineering.com
 
 Gewerblicher Verkauf durch die Simulated Flow UG — es gelten das gesetzliche Widerrufsrecht (14 Tage) und die gesetzliche Gewährleistung.

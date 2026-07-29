@@ -6,3 +6,7 @@ Thumbs.db
 .mcp-backups/
 *.kicad_prl
 fp-info-cache
+
+run_build.cmd
+*.lck
+~*
