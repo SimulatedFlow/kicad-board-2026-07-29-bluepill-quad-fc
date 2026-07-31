@@ -8,5 +8,11 @@ This repository contains the **full design files** of a commercial hardware boar
 **Get it / Buy:**
 - Listing folgt — Kontakt: simulatedflow@gmail.com
 
+### 📬 **Free Board Documentation & Firmware Pack**
+
+Schematics, BOMs and example-firmware docs for our STM32 carrier boards. Get it by joining the newsletter — plus a heads-up when something new ships. Double opt-in, unsubscribe in one click, no address sharing.
+
+👉 **[Get the free pack](https://simulatedflow.teufel-engineering.com/newsletter/hardware/?q=gh)**
+
 _© 2026 Simulated Flow UG. All rights reserved._
 <!-- SF-STORE-BLOCK:END -->
